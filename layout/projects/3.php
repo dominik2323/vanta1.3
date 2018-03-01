@@ -137,7 +137,7 @@ $anotherproject = $selectproject->AnotherProject();
 			<a href="#1"><img src="../../img/ikony/scrollup.png" alt=""></a>
 		</li>
 		<li>
-			<a href="	">Jiný projekt</a>
+			<a href="<?php echo '/project/'.$anotherproject; ?>">Jiný projekt</a>
 		</li>
 	</ul>		
 </div>
