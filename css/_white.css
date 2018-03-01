@@ -1,0 +1,16 @@
+body {
+	background-color: white;
+}
+h3, p {
+	color: #4D4D4D;
+}
+h1, h2 {
+	color: black;
+}
+.mini-hr {
+	border-top: 2px solid black;
+}
+.foot img {
+	-webkit-filter: invert(100%);
+	filter: invert(100%);
+}
