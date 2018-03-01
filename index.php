@@ -63,7 +63,7 @@
 	?>
 	<div class="menu">
 		<a class="logo" href="/">
-			VANTA LAB
+			VANTAaaaaaa LAB
 		</a>
 		<div class="nav">
 			<ul>
