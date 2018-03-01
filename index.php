@@ -69,7 +69,7 @@
 		<div class="nav">
 			<ul>
 				<li class="section">	
-					<a <?php if ($getpagename == 'cooperation') {echo 'class="active"';} ?> href="/cooperation">
+					<a <?php if ($getpagename == 'cooperation') {echo 'class="active"';} ?> href="#about">
 						<?php echo $lang['spoluprace']; ?>
 					</a>
 				</li>

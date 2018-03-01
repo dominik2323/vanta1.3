@@ -54,7 +54,8 @@
 					<img id="id11" class="remove" src="img/landingpage/auto_col.jpg" />
 			</div>
 		</div>
-		<div class="about">
+		<div id="about" class="about">
 			<div class="spacer100"></div>
 			<h1>Blablabla</h1>
+			<h2>Lorem ipsum dolor sit amet</h2>
 		</div>
