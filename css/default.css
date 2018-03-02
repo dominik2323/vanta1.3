@@ -35,53 +35,75 @@ body {
 	grid-area: item11;
 }
 .grid {
+	width: 100%;
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
-	grid-template-rows: repeat(5, 80%);
+	grid-template-rows: repeat(5, 1fr);
 	grid-template-areas: 
-	"item01 item01 item02 item02 item02 item02"
-	"item03 item03 item03 item03 item05 item05"
-	"item09 item09 item09 item06 item06 item06"
+	"item01 item01 item06 item06 item06 item06"
+	"item03 item03 item03 item02 item02 item02"
+	"item09 item09 item09 item09 item05 item05"
 	"item04 item04 item08 item08 item07 item07"
-	"item10 item10 item10 item11 item11 item11"
+	"item10 item10 item10 item10 item11 item11"
 	;
+	//justify-items: center;
 	grid-gap: 4px;
 }
 .grid>div {
-	height: 80vh;
+	height: 700px;
 	position: relative;
 	overflow: hidden;
 }
 .grid img {
 	position: absolute;
 	width: 100%;
-	height: 80vh;
-	min-height: 600px;
+	height: 100%;
+	/*min-height: 600px;*/
 	object-fit: cover;
-	object-position: center;
-}
+}/*
 .item01 img {
 	min-height: 900px;
 	top: 40px;
-}
+}*/
 .about {
 	height: 100%;
 	min-height: 700px;
 	color: white;
 }
+@media only screen and (max-width: 1600px) {
+.grid>div {
+	height: 500px;
+}	
+}
+@media only screen and (max-width: 1100px) {
+.grid>div {
+	height: 400px;
+}	
+}
+@media only screen and (max-width: 900px) {
+.grid>div {
+	height: 300px;
+}	
+}
 @media only screen and (max-width: 768px) {
 .grid {
-	width: 100%;
-	height: 400%;
-	grid-template-columns: repeat(1, 1fr);
-	grid-template-rows: repeat(5, 1fr);
-	grid-gap: 4px;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(10, 1fr);
+	grid-gap: 0px;
 	grid-template-areas: 
-	"item1"
-	"item2"
-	"item3"
-	"item4"
-	"item5"
+	"item01"
+	"item02"
+	"item03"
+	"item04"
+	"item05"
+	"item06"
+	"item07"
+	"item08"
+	"item09"
+	"item10"
 	;
-}	
+}
+.grid>div {
+	height: 70vh;
+}		
 }
