@@ -143,6 +143,10 @@ p {
 	opacity: .4;
 	transition-duration: .3s;
 }
+@media only screen and (max-width: 768px) {
+
+}
+/*
 @media only screen and (max-width: 360px) {
 ul {
 	display: block;
