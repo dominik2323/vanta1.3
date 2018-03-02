@@ -1,0 +1,13 @@
+@import url('../../../css/_black.css');
+
+.hamburger {
+	width: 300px;
+	box-sizing: border-box;
+	padding: 20px;
+	margin: auto;
+	background-color: white;
+}
+.hamburger ul {
+	list-style: none;
+	margin: 0;
+}

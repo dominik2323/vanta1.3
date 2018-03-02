@@ -42,6 +42,7 @@
 		<title>VANTA LAB<?php if (!empty($pagetitle)) {echo '&emsp;|&emsp;'.$pagetitle;}?></title>
 		<script>document.write('<script src="http://' + (location.host || '127.0.0.1').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="./js/menu-mobil.js"></script>
 		<?php
 		switch ($getpagename) {
 			case 'default':
