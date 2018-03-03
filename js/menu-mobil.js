@@ -1,7 +1,17 @@
 $(document).ready(function()
 {
-	$('.hamb').click(function()
+	$('.hamb').click(function(e)
 	{
-		$('.nav').toggle(0);
+		e.stopPropagation();
+		$('.nav>a').css('display', 'block');
+		hideMenu();
 	});
+	
 });
+function hideMenu()
+{	
+	$('body').click(function()
+	{
+		$('.nav>a:not(:last-child)').css('display', 'none');
+	});
+}

@@ -67,7 +67,6 @@
 		<a class="logo" href="/">
 			VANTA LAB
 		</a>
-		<div class="hamb"><a href="javascript:void(0);">&#9776;</a></div>
 		<div class="nav">	
 			<a <?php if ($getpagename == 'cooperation') {echo 'class="active"';} ?> href="#about">
 				<?php echo $lang['spoluprace']; ?>
@@ -79,6 +78,10 @@
 			
 			<a class="lang<?php if ($_SESSION['lang'] == 'cs') {echo ' active';} ?>" href="../lang.php?lang=cs&backurl=<?php echo $getfullurl; ?>">
 				CS
+			</a>
+
+			<a class="hamb" href="javascript:void(0);">
+				&#9776;
 			</a>
 		</div>				
 	</div>		
