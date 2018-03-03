@@ -1,5 +1,5 @@
 <?php
-	// temporary branch
+	// menu-responsive branch
 	session_start(); 
 	include ('./inc/Router.php');
 	$router = new Router();
