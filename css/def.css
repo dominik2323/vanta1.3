@@ -1,6 +1,6 @@
 body {
 	margin: 0px;
-	font-family: 'Space Mono', monospace;
+	font-family: 'Space Mono', monospace, sans-serif;
 	font-variant-numeric: oldstyle-nums;
 }
 #loading {
@@ -14,60 +14,14 @@ body {
 	background-color: #262626;
 }
 .menu {
-	background-color: #262626;
-	height: 40px;
-	box-sizing: border-box;
-	padding: 0% 10%;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: 1;
+	padding: 0 10%;
 }
 .nav {
-	height: 100%;
-	float: right;	
-	font-size: 13px;
-	letter-spacing: .2em;
-	font-weight: 700;
+	float: right;
 }
-.nav ul {
-	height: 100%;
-	list-style: none;
-	float: right;	
-	margin: 0;
-}
-.nav li {
-	float: left;
-	margin-top: 8px;	
-}
-a {
+.nav a {
+	color: white;
 	text-decoration: none;
-	color: #808080;
-}
-.nav .active, .nav .active:hover {
-	color: #808080;
-}
-.menu a:hover {
-	color: #999999;
-	transition-duration: .3s;
-}
-.section {
-	margin: 0px 80px;
-	color: #808080;
-}
-.lang {
-	margin: 0px 20px;
-	color: #4D4D4D;
-}
-.curr {
-	color: yellow;
-}
-.slash {
-	width: 1px;
-	height: 100%;	
-	float: left;
-	margin: 0;
-	background-color: #4D4D4D;
 }
 .logo {
 	display: inline-block;	
@@ -143,8 +97,36 @@ p {
 	opacity: .4;
 	transition-duration: .3s;
 }
+.hamb {
+	display: none;
+}
 @media only screen and (max-width: 768px) {
-
+.nav {
+	display: none;
+	position: absolute;
+	right: 10%;
+	text-align: right;
+}
+.nav li {
+	float: none;
+	padding: 10px 0;
+}
+.slash {
+	display: none;
+}
+.section {
+	margin: 0;
+}
+.lang {
+	margin: 0;
+}
+.hamb {
+	display: block;
+	float: right;
+	margin-top: 4px;
+	color: white;
+	font-size: 20px;
+}
 }
 /*
 @media only screen and (max-width: 360px) {

@@ -67,23 +67,19 @@
 		<a class="logo" href="/">
 			VANTA LAB
 		</a>
-		<div class="nav">
-			<ul>
-				<li class="section">	
-					<a <?php if ($getpagename == 'cooperation') {echo 'class="active"';} ?> href="#about">
-						<?php echo $lang['spoluprace']; ?>
-					</a>
-				</li>
-				<li>
-					<a class="lang<?php if ($_SESSION['lang'] == 'en') {echo ' active';} ?>" href="../lang.php?lang=en&backurl=<?php echo $getfullurl; ?>">EN
-					</a>
-				</li>
-				<div class="slash"></div>
-				<li>
-					<a class="lang<?php if ($_SESSION['lang'] == 'cs') {echo ' active';} ?>" href="../lang.php?lang=cs&backurl=<?php echo $getfullurl; ?>">CS
-					</a>
-				</li>
-			</ul>
+		<div class="hamb"><a href="javascript:void(0);">&#9776;</a></div>
+		<div class="nav">	
+			<a <?php if ($getpagename == 'cooperation') {echo 'class="active"';} ?> href="#about">
+				<?php echo $lang['spoluprace']; ?>
+			</a>
+			
+			<a class="lang<?php if ($_SESSION['lang'] == 'en') {echo ' active';} ?>" href="../lang.php?lang=en&backurl=<?php echo $getfullurl; ?>">
+				EN
+			</a>
+			
+			<a class="lang<?php if ($_SESSION['lang'] == 'cs') {echo ' active';} ?>" href="../lang.php?lang=cs&backurl=<?php echo $getfullurl; ?>">
+				CS
+			</a>
 		</div>				
 	</div>		
 		<?php
