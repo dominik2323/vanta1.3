@@ -68,15 +68,15 @@
 			VANTA LAB
 		</a>
 		<div class="nav">	
-			<a <?php if ($getpagename == 'cooperation') {echo 'class="active"';} ?> href="#about">
+			<a href="#about">
 				<?php echo $lang['spoluprace']; ?>
 			</a>
 			
-			<a class="lang<?php if ($_SESSION['lang'] == 'en') {echo ' active';} ?>" href="../lang.php?lang=en&backurl=<?php echo $getfullurl; ?>">
+			<a <?php if ($_SESSION['lang'] == 'cs') {echo 'class="active"';} ?> href="../lang.php?lang=en&backurl=<?php echo $getfullurl; ?>">
 				EN
 			</a>
-			
-			<a class="lang<?php if ($_SESSION['lang'] == 'cs') {echo ' active';} ?>" href="../lang.php?lang=cs&backurl=<?php echo $getfullurl; ?>">
+			|
+			<a <?php if ($_SESSION['lang'] == 'en') {echo 'class="active"';} ?> href="../lang.php?lang=cs&backurl=<?php echo $getfullurl; ?>">
 				CS
 			</a>
 

@@ -1,17 +1,21 @@
 $(document).ready(function()
 {
+showMenu();
+function showMenu()
+{
 	$('.hamb').click(function(e)
 	{
 		e.stopPropagation();
-		$('.nav>a').css('display', 'block');
+		$('.nav>a:not(:last-child)').addClass('show');
 		hideMenu();
 	});
-	
-});
+}
 function hideMenu()
-{	
-	$('body').click(function()
+{
+	$('.hamb, body').click(function()
 	{
-		$('.nav>a:not(:last-child)').css('display', 'none');
+		$('.nav>a:not(:last-child)').removeClass('show');
+		showMenu();
 	});
 }
+});

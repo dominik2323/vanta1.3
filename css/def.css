@@ -13,6 +13,18 @@ body {
 	overflow: hidden;
 	background-color: #262626;
 }
+
+/* header */
+
+.logo {
+	display: inline-block;	
+	font-weight: 700;
+	font-size: 23px;
+	letter-spacing: .1em;
+	color: #808080;	
+	text-decoration: none;
+	margin-top: 1px;
+}
 .menu {
 	width: 100%;
 	height: 40px;
@@ -25,28 +37,29 @@ body {
 .nav {
 	float: right;
 	margin-top: 8px;
+	color: #4D4D4D;
 }
-.nav a {
+.nav>a {
 	margin: 0 15px;
 	text-decoration: none;
 	color: #808080;
 }
-.nav a:hover {
+.nav:first-child {
+	margin-left: 40px;
+}
+.nav>a:hover {
 	color: #999999;
 	transition-duration: .3s;
 }
-.active, .active:hover {
-	color: yellow;
+.nav>a.active {
+	color: #4D4D4D;
 }
-.logo {
-	display: inline-block;	
-	font-weight: 700;
-	font-size: 23px;
-	letter-spacing: .1em;
-	color: #808080;	
-	text-decoration: none;
-	margin-top: 1px;
+.hamb {
+	display: none;
 }
+
+/* spacers */
+
 .mini-hr {
 	width: 40px;
 	border-top: 2px solid #FFFFFF;
@@ -67,6 +80,9 @@ body {
 .spacer25 {
 	height: 25px;
 }
+
+/* typo */
+
 h1 {
 	font-size: 19px;
 	text-align: center;
@@ -96,6 +112,9 @@ p {
 	line-height: 1.7em;
 	letter-spacing: .06em;
 }
+
+/* pata */
+
 .foot {
 	width: 160px;
 	height: 40px;
@@ -112,9 +131,7 @@ p {
 	opacity: .4;
 	transition-duration: .3s;
 }
-.hamb {
-	display: none;
-}
+
 @media only screen and (max-width: 768px) {
 .nav {
 	text-align: right;
@@ -131,6 +148,9 @@ p {
 	margin-top: 4px;
 	color: white;
 	font-size: 20px;
+}
+.nav a.show {
+	display: block;
 }
 }
 /*
