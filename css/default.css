@@ -1,5 +1,18 @@
 body {
-	background-color: #262626;
+	background-color: #212529;
+}
+h1 {
+
+	color: #D0DCE8;
+	text-align: left;
+}
+.content {
+	width: 1170px;
+	margin: auto;
+}
+.intro {
+	height: 60%;
+	min-height: 700px;
 }
 .item01 {
 	grid-area: item01;
@@ -36,9 +49,10 @@ body {
 }
 .grid {
 	width: 100%;
+	margin: auto;
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
-	grid-template-rows: repeat(5, 1fr);
+	grid-template-rows: repeat(6, 1fr);
 	grid-template-areas: 
 	"item01 item01 item06 item06 item06 item06"
 	"item03 item03 item03 item02 item02 item02"
@@ -46,13 +60,31 @@ body {
 	"item04 item04 item08 item08 item07 item07"
 	"item10 item10 item10 item10 item11 item11"
 	;
-	//justify-items: center;
-	grid-gap: 4px;
+	grid-gap: 3px;
 }
 .grid>div {
-	height: 700px;
+	height: 500px;
 	position: relative;
 	overflow: hidden;
+}
+.grid h2 {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 400px 0px 0px 30px;
+	color: #B3B3B3;
+	text-align: left;
+	z-index: 1;
+	opacity: 0;
+}
+.grid h2:hover {
+	opacity: 1;
+	transition-duration: .3s;
 }
 .grid img {
 	position: absolute;
@@ -76,11 +108,17 @@ body {
 }	
 }
 @media only screen and (max-width: 1100px) {
+.grid {
+	width: 900px;
+}
 .grid>div {
 	height: 400px;
 }	
 }
 @media only screen and (max-width: 900px) {
+.grid {
+	width: 768px;
+}
 .grid>div {
 	height: 300px;
 }	

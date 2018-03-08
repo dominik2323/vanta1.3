@@ -73,11 +73,11 @@
 			</a>
 			
 			<a <?php if ($_SESSION['lang'] == 'cs') {echo 'class="active"';} ?> href="../lang.php?lang=en&backurl=<?php echo $getfullurl; ?>">
-				EN
+				&emsp;EN 
 			</a>
-			|
+			<a>|</a>
 			<a <?php if ($_SESSION['lang'] == 'en') {echo 'class="active"';} ?> href="../lang.php?lang=cs&backurl=<?php echo $getfullurl; ?>">
-				CS
+				CS&emsp; 
 			</a>
 
 			<a class="hamb" href="javascript:void(0);">

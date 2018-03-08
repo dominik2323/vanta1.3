@@ -1,5 +1,11 @@
+		<div class="content">
+		<div class="intro">
+			
+		</div>
+		<h1>Projekty</h1>
 		<div class="grid">
-			<div class="item01">				
+			<div class="item01">		
+					<h2>Cognitive Hub<br />Konica Minolta</h2>		
 					<img src="img/landingpage/server.jpg" />
 					<img id="id01" class="remove" src="img/landingpage/server_col.jpg" />
 			</div>
@@ -11,6 +17,7 @@
 
 			<div class="item03">					
 					<img src="img/landingpage/kombajn.jpg" />
+					<h2>autonomní<br />zemědělský kombajn</h2>
 					<img id="id03" class="remove" src="img/landingpage/kombajn_col.jpg" />
 			</div>
 
@@ -24,7 +31,8 @@
 					<img id="id05" class="remove" src="img/landingpage/lavicka_col.jpg" />
 			</div>
 
-			<div class="item06">				
+			<div class="item06">
+					<h2>Traktor<br /> na elektrický pohon</h2>				
 					<img src="img/landingpage/traktor.jpg" />
 					<img id="id06" class="remove" src="img/landingpage/traktor_col.jpg" />
 			</div>
@@ -58,4 +66,5 @@
 			<div class="spacer100"></div>
 			<h1>Blablabla</h1>
 			<h2>Lorem ipsum dolor sit amet</h2>
+		</div>
 		</div>

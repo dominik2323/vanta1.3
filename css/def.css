@@ -11,7 +11,7 @@ body {
 	top: 0;
 	left: 0;
 	overflow: hidden;
-	background-color: #262626;
+	background-color: #212529;
 }
 
 /* header */
@@ -21,31 +21,31 @@ body {
 	font-weight: 700;
 	font-size: 23px;
 	letter-spacing: .1em;
-	color: #808080;	
+	color: #C2CFD9;	
 	text-decoration: none;
 	margin-top: 1px;
 }
 .menu {
 	width: 100%;
-	height: 40px;
-	background-color: #262626;
+	/*height: 40px;*/
+	background-color: #212529;
 	box-sizing: border-box;
-	padding: 0 10%;
+	padding: 10px 10%;
 	position: fixed;
+	top: 0px;
 	z-index: 1;
 }
 .nav {
 	float: right;
-	margin-top: 8px;
+	margin-top: 6px;
 	color: #4D4D4D;
 }
 .nav>a {
-	margin: 0 15px;
 	text-decoration: none;
 	color: #808080;
 }
-.nav:first-child {
-	margin-left: 40px;
+.nav>a:first-child {
+	margin-right: 40px;
 }
 .nav>a:hover {
 	color: #999999;
@@ -135,21 +135,32 @@ p {
 @media only screen and (max-width: 768px) {
 .nav {
 	text-align: right;
+	line-height: 2.5em;
 }
-.nav a {
+.nav>a:first-child {
+	float: none;
+	margin: 0;
+}/*
+.nav>a:first-child {
+	margin-right: 0px;
+}*/
+.nav>a {
 	display: none;
+	position: relative;
+	top: 40px;
+	float: right;
 }
-.nav a:last-child {
+.nav>a:last-child {
 	display: block;
 	position: absolute;
 	top: 0;
-	right: 0;
+	right: 10%;
 	float: right;
 	margin-top: 4px;
 	color: white;
 	font-size: 20px;
 }
-.nav a.show {
+.nav>a.show {
 	display: block;
 }
 }
