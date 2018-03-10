@@ -3,6 +3,9 @@ body {
 	font-family: 'Space Mono', monospace, sans-serif;
 	font-variant-numeric: oldstyle-nums;
 }
+a {
+	text-decoration: none;
+}
 #loading {
 	width: 100%;
 	height: 100%;
@@ -33,26 +36,27 @@ body {
 	padding: 10px 10%;
 	position: fixed;
 	top: 0px;
-	z-index: 1;
+	z-index: 2;
 }
 .nav {
 	float: right;
 	margin-top: 6px;
-	color: #4D4D4D;
-}
+}/*
+.dark {
+	color: #000000;
+}*/
 .nav>a {
-	text-decoration: none;
-	color: #808080;
+	color: #899299;
 }
 .nav>a:first-child {
 	margin-right: 40px;
 }
 .nav>a:hover {
-	color: #999999;
+	color: #ADBDCC;
 	transition-duration: .3s;
 }
 .nav>a.active {
-	color: #4D4D4D;
+	color: #485866;
 }
 .hamb {
 	display: none;
@@ -94,7 +98,7 @@ h2 {
 	font-size: 14px;
 	text-align: center;
 	font-weight: 600;
-	letter-spacing: .18em;
+	letter-spacing: .05em;
 	margin-bottom: 30px;
 }
 h3 {
