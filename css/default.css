@@ -95,30 +95,29 @@ h1 {
 	position: absolute;
 	opacity: 0;	
 }
-.envelope p {
-	-moz-transform: rotate(-90deg);
-	transform-origin: 50% 100%;
-	color: #D0DCE8;
-	display: inline-block;
-	padding: 4px 15px 6px 15px;
-	/*background-color: #292F33;*/
-	position: absolute;
-	left: -20px;
-	right: 100px;
-	margin: 10px;
+.envelope p, .envelope h2
+{		
 	font-size: 13px;
 	font-weight: 400;
-	text-align: center;
 	letter-spacing: .1em;
-}/*
+}
+.envelope p {
+	color: #8FA1B3;
+	width: fit-content;
+	transform-origin: 0% 100%;
+	transform: translate(25px, 70px) rotate(-90deg);
+	position: absolute;
+	z-index: 1;
+}
 .envelope h2 {
 	color: #D0DCE8;
 	position: absolute;
-	bottom: 0;
-	font-weight: 400;
-	text-align: left;
-	left: 50px;
-}*/
+	bottom: 10px;
+	margin: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+}
 .envelope:hover {
 	opacity: 1;
 	transition-duration: .3s;

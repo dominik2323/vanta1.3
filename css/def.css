@@ -46,7 +46,7 @@ a {
 	color: #000000;
 }*/
 .nav>a {
-	color: #899299;
+	color: #8FA1B3;
 }
 .nav>a:first-child {
 	margin-right: 40px;
@@ -60,29 +60,6 @@ a {
 }
 .hamb {
 	display: none;
-}
-
-/* spacers */
-
-.mini-hr {
-	width: 40px;
-	border-top: 2px solid #FFFFFF;
-	margin: 40px auto 40px auto;
-}
-.spacer200 {
-	height: 200px;
-}
-.spacer150 {
-	height: 150px;
-}
-.spacer100 {
-	height: 100px;
-}
-.spacer50{
-	height: 50px;
-}
-.spacer25 {
-	height: 25px;
 }
 
 /* typo */

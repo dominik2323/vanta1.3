@@ -8,7 +8,7 @@
 			<div class="item01">		
 					<img src="img/landingpage/server.jpg" />
 					<div class="envelope">
-						<h2>Cognitive Hub<br />Konica Minolta</h2>			
+						<h2>Konica Minolta Cognitive Hub</h2>			
 						<p>realizace</p>
 					</div>
 					<img id="id01" class="remove" src="img/landingpage/server_col.jpg" />

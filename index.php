@@ -59,9 +59,10 @@
 	</head>
 	<body>
 	<?php
-	if ($getpagename == "default") {
-		echo ('<div id="loading"></div>');
-	}
+		if ($getpagename == "default") 
+		{
+			echo ('<div id="loading"></div>');
+		}
 	?>
 	<div class="menu">
 		<a class="logo" href="/">
