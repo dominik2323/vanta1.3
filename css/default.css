@@ -94,28 +94,23 @@ h1 {
 	height: 100%;
 	position: absolute;
 	opacity: 0;	
-	font-family: "Proxima nova";
 }
 .envelope p {
-	/*-moz-transform: rotate(-90deg);
-	transform-origin: 0% 100%;*/
+	-moz-transform: rotate(-90deg);
+	transform-origin: 50% 100%;
 	color: #D0DCE8;
-	/*display: inline-block;*/
+	display: inline-block;
 	padding: 4px 15px 6px 15px;
-	background-color: #292F33;
-	/*box-sizing: border-box;*/
+	/*background-color: #292F33;*/
 	position: absolute;
-	left: 0;
-	bottom: 0;
-	margin: 0;
-	-moz-transform: rotate(90deg);
-	transform-origin: 0% 100%;
-	font-size: 11px;
+	left: -20px;
+	right: 100px;
+	margin: 10px;
+	font-size: 13px;
 	font-weight: 400;
-	text-align: left;
-	text-transform: uppercase;
-	letter-spacing: .17em;
-}
+	text-align: center;
+	letter-spacing: .1em;
+}/*
 .envelope h2 {
 	color: #D0DCE8;
 	position: absolute;
@@ -123,7 +118,7 @@ h1 {
 	font-weight: 400;
 	text-align: left;
 	left: 50px;
-}
+}*/
 .envelope:hover {
 	opacity: 1;
 	transition-duration: .3s;
