@@ -125,39 +125,40 @@
 					<h4>
 						<?php echo $lang['h4'][1]; ?>
 					</h4>
+
 					<div class="faze">
 						<div><h5><?php echo $lang['faze']; ?></h5></div>
 						<div>01</div>
 						<div class="trychtyr"></div>
-						<div><p><?php echo $lang['faze_reserse'][0]; ?></p></div>
+						<div><p><?php echo $lang['faze_reserse']; ?></p></div>
 					</div>
 					<ul>
 						<li class="slideDown">
 							<div>A</div>
-							<p><?php echo $lang['reserse_li'][0]; ?></p>
+							<p><?php echo $lang['faze_reserse_li'][0]; ?></p>
 							<div class="plus"></div>
 							<ul style="display: none;">
-								<li><?php echo $lang['reserse_li_ul'][0]; ?></li>
-								<li><?php echo $lang['reserse_li_ul'][1]; ?></li>
-								<li><?php echo $lang['reserse_li_ul'][2]; ?></li>
-								<li><?php echo $lang['reserse_li_ul'][3]; ?></li>	
+								<li><?php echo $lang['faze_reserse_li_ul'][0]; ?></li>
+								<li><?php echo $lang['faze_reserse_li_ul'][1]; ?></li>
+								<li><?php echo $lang['faze_reserse_li_ul'][2]; ?></li>
+								<li><?php echo $lang['faze_reserse_li_ul'][3]; ?></li>	
 							</ul>
 						</li>
 						<div class="line"></div>
 						<li class="slideDown">
 							<div>B</div>
-							<p><?php echo $lang['reserse_li'][1]; ?></p>
+							<p><?php echo $lang['faze_reserse_li'][1]; ?></p>
 							<div class="plus"></div>
 							<ul style="display: none;">
-								<li><?php echo $lang['reserse_li_ul'][4]; ?></li>
-								<li><?php echo $lang['reserse_li_ul'][5]; ?></li>
-								<li><?php echo $lang['reserse_li_ul'][6]; ?></li>
+								<li><?php echo $lang['faze_reserse_li_ul'][4]; ?></li>
+								<li><?php echo $lang['faze_reserse_li_ul'][5]; ?></li>
+								<li><?php echo $lang['faze_reserse_li_ul'][6]; ?></li>
 							</ul>
 						</li>
 						<div class="line"></div>
 						<li>
 							<div>C</div>
-							<p><?php echo $lang['reserse_li'][2]; ?></p>
+							<p><?php echo $lang['faze_reserse_li'][2]; ?></p>
 						</li>
 					</ul>
 
@@ -165,54 +166,54 @@
 						<div><h5><?php echo $lang['faze']; ?></h5></div>
 						<div>02</div>
 						<div class="pencil"></div>
-						<div><p><?php echo $lang['faze_navrh'][0]; ?></p></div>
+						<div><p><?php echo $lang['faze_navrh']; ?></p></div>
 					</div>
 					<ul>
 						<li class="slideDown">
 							<div>A</div>
-							<p>Vize</p>
+							<p><?php echo $lang['faze_navrh_li'][0]; ?></p>
 							<div class="plus"></div>
 							<ul style="display: none;">
-								<li>bla</li>
-								<li>bla</li>
-								<li>bla</li>
-								<li>bla</li>	
+								<li><?php echo $lang['faze_navrh_li_ul'][0]; ?></li>
+								<li><?php echo $lang['faze_navrh_li_ul'][1]; ?></li>
+								<li><?php echo $lang['faze_navrh_li_ul'][2]; ?></li>
+								<li><?php echo $lang['faze_navrh_li_ul'][3]; ?></li>	
 							</ul>
 						</li>
 						<div class="line"></div>
 						<li class="slideDown">
 							<div>B</div>
-							<p>Hmotové studie</p>
+							<p><?php echo $lang['faze_navrh_li'][1]; ?></p>
 							<div class="plus"></div>
 							<ul style="display: none;">
-								<li>bla</li>
-								<li>bla</li>
-								<li>bla</li>
-								<li>bla</li>	
+								<li><?php echo $lang['faze_navrh_li_ul'][4]; ?></li>
+								<li><?php echo $lang['faze_navrh_li_ul'][5]; ?></li>
+								<li><?php echo $lang['faze_navrh_li_ul'][6]; ?></li>
+								<li><?php echo $lang['faze_navrh_li_ul'][7]; ?></li>	
 							</ul>
 						</li>
 						<div class="line"></div>
 						<li class="slideDown">
 							<div>C</div>
-							<p>Fyzické modely</p>
+							<p><?php echo $lang['faze_navrh_li'][2]; ?></p>
 							<div class="plus"></div>
 							<ul style="display: none;">
-								<li>bla</li>
-								<li>bla</li>
-								<li>bla</li>
-								<li>bla</li>	
+								<li><?php echo $lang['faze_navrh_li_ul'][8]; ?></li>
+								<li><?php echo $lang['faze_navrh_li_ul'][9]; ?></li>
+								<li><?php echo $lang['faze_navrh_li_ul'][10]; ?></li>
+								<li><?php echo $lang['faze_navrh_li_ul'][11]; ?></li>	
 							</ul>
 						</li>
 						<div class="line"></div>
 						<li class="slideDown">
 							<div>D</div>
-							<p>Vizualizace</p>
+							<p><?php echo $lang['faze_navrh_li'][3]; ?></p>
 							<div class="plus"></div>
 							<ul style="display: none;">
-								<li>bla</li>
-								<li>bla</li>
-								<li>bla</li>
-								<li>bla</li>	
+								<li><?php echo $lang['faze_navrh_li_ul'][12]; ?></li>
+								<li><?php echo $lang['faze_navrh_li_ul'][13]; ?></li>
+								<li><?php echo $lang['faze_navrh_li_ul'][14]; ?></li>
+								<li><?php echo $lang['faze_navrh_li_ul'][15]; ?></li>	
 							</ul>
 						</li>
 					</ul>
@@ -221,7 +222,7 @@
 						<div><h5><?php echo $lang['faze']; ?></h5></div>
 						<div>03</div>
 						<div class="vyroba"></div>
-						<div><p><?php echo $lang['faze_nazev'][2]; ?></p></div>
+						<div><p><?php echo $lang['faze_vyroba']; ?></p></div>
 					</div>
 					<ul>
 						<li class="slideDown">
@@ -229,10 +230,10 @@
 							<p>Dotažení návrhu pro výrobu</p>
 							<div class="plus"></div>
 							<ul style="display: none;">
-								<li>bla</li>
-								<li>bla</li>
-								<li>bla</li>
-								<li>bla</li>	
+								<li><?php echo $lang['faze_vyroba_li_ul'][0]; ?></li>
+								<li><?php echo $lang['faze_vyroba_li_ul'][1]; ?></li>
+								<li><?php echo $lang['faze_vyroba_li_ul'][2]; ?></li>
+								<li><?php echo $lang['faze_vyroba_li_ul'][3]; ?></li>	
 							</ul>
 						</li>
 						<div class="line"></div>
@@ -241,10 +242,10 @@
 							<p>Příprava dat pro výrobu</p>
 							<div class="plus"></div>
 							<ul style="display: none;">
-								<li>bla</li>
-								<li>bla</li>
-								<li>bla</li>
-								<li>bla</li>	
+								<li><?php echo $lang['faze_vyroba_li_ul'][4]; ?></li>
+								<li><?php echo $lang['faze_vyroba_li_ul'][5]; ?></li>
+								<li><?php echo $lang['faze_vyroba_li_ul'][6]; ?></li>
+								<li><?php echo $lang['faze_vyroba_li_ul'][7]; ?></li>	
 							</ul>
 						</li>
 						<div class="line"></div>
@@ -253,10 +254,10 @@
 							<p>Supervize</p>
 							<div class="plus"></div>
 							<ul style="display: none;">
-								<li>bla</li>
-								<li>bla</li>
-								<li>bla</li>
-								<li>bla</li>	
+								<li><?php echo $lang['faze_vyroba_li_ul'][8]; ?></li>
+								<li><?php echo $lang['faze_vyroba_li_ul'][9]; ?></li>
+								<li><?php echo $lang['faze_vyroba_li_ul'][10]; ?></li>
+								<li><?php echo $lang['faze_vyroba_li_ul'][11]; ?></li>	
 							</ul>
 						</li>
 					</ul>
@@ -265,30 +266,30 @@
 						<div><h5><?php echo $lang['faze']; ?></h5></div>
 						<div>04</div>
 						<div class="graf"></div>
-						<div><p><?php echo $lang['faze_nazev'][3]; ?></p></div>
+						<div><p><?php echo $lang['faze_grafika']; ?></p></div>
 					</div>
 					<ul>
 						<li class="slideDown">
 							<div>A</div>
-							<p>Příprava grafické prezentace produktu</p>
+							<p><?php echo $lang['faze_grafika_li'][0]; ?></p>
 							<div class="plus"></div>
 							<ul style="display: none;">
-								<li>bla</li>
-								<li>bla</li>
-								<li>bla</li>
-								<li>bla</li>	
+								<li><?php echo $lang['faze_grafika_li_ul'][0]; ?></li>
+								<li><?php echo $lang['faze_grafika_li_ul'][1]; ?></li>
+								<li><?php echo $lang['faze_grafika_li_ul'][2]; ?></li>
+								<li><?php echo $lang['faze_grafika_li_ul'][3]; ?></li>	
 							</ul>
 						</li>
 						<div class="line"></div>
 						<li class="slideDown">
 							<div>B</div>
-							<p>Návrh uživatelských rozhraní</p>
+							<p><?php echo $lang['faze_grafika_li'][1]; ?></p>
 							<div class="plus"></div>
 							<ul style="display: none;">
-								<li>bla</li>
-								<li>bla</li>
-								<li>bla</li>
-								<li>bla</li>	
+								<li><?php echo $lang['faze_grafika_li_ul'][4]; ?></li>
+								<li><?php echo $lang['faze_grafika_li_ul'][5]; ?></li>
+								<li><?php echo $lang['faze_grafika_li_ul'][6]; ?></li>
+								<li><?php echo $lang['faze_grafika_li_ul'][7]; ?></li>	
 							</ul>
 						</li>
 					</ul>

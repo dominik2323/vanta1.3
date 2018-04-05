@@ -89,12 +89,12 @@
 				<p>info@vantalab.cz</p>
 			</li>
 			<li>
-				<h4>telefon</h4>
-				<p>724 468 834</p>
+				<h4><?php echo $lang['telefon']; ?></h4>
+				<p><?php echo $lang['cislo']; ?></p>
 			</li>
 			<li>
-				<h4>adresa</h4>
-				<p>Brno, Botanická 59</p>
+				<h4><?php echo $lang['adresa']; ?></h4>
+				<p><?php echo $lang['atelier']; ?></p>
 			</li>
 		</ul>
 	</div>
