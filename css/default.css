@@ -1,34 +1,74 @@
 body {
-	background-color: #212529;
-}
-h1 {
-	font-size: 25px;
-	color: #D0DCE8;
-	text-align: left;
-	letter-spacing: .05em;
+	background-color: #252729;
+	color: #dae6f1;
 }
 .content {
-	width: 1170px;
+	width: 1400px;
 	margin: auto;
 }
+
+/* intro slide */
+	
 .intro {
-	height: 100%;
-	position: relative;
-	top: 35%;
-	min-height: 700px;
+	height: 100vh;
+	min-height: 1000px;
+	width: auto;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 50px;
+	margin: auto;
+	padding-top: 15%;
+	box-sizing: border-box;
 }
-.btn {
-	color: #D0DCE8;
-	display: inline-block;
-	padding: 25px;
-	margin: 50px 5px;
-	border: 1px solid #D0DCE8;
+.intro h1 {
+	font-size: 140px;
+	line-height: 140px;
+	text-align: left;
+	float: right;
+	letter-spacing: -.01em;
+	margin: 100px 0 0 0;
 }
-.btn:hover {
-	color: #99D0FF;
-	border: 1px solid #99D0FF;
-	transition-duration: .3s;
+.intro h2 {
+	font-size: 30px;
+	font-weight: 400;
+	text-align: right;
+	float: left;
+	letter-spacing: -.01em;
+	line-height: 36px;
+}/*
+.intro ul {
+	font-size: 18px;
+	line-height: 25px;
+	font-weight: 400;
+	text-align: left;
+	letter-spacing: -.01em;
+	padding: 0;
+	margin-top: 50px;
+	list-style: none;
 }
+.intro li {
+	background-image: url('data:image/svg+xml;utf-8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"   x="0px" y="0px" width="9px" height="15px" viewBox="0 0 9 15" style="enable-background:new 0 0 9 15;" xml:space="preserve"><style type="text/css">.st0{fill:%23828E99;}</style><defs></defs><g id="Layer_2_2_">   <g id="Layer_1-2_1_">      <polygon class="st0" points="9,7.5 9,5.5 0,0 0,2      "/>      <polygon class="st0" points="9,7.5 9,9.5 0,15 0,13       "/>   </g></g></svg>');
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 40px;
+}*/
+.intro>a {
+	width: 34px;
+	height: 14px;
+	display: block;
+	margin: auto;
+	position: absolute;
+	top: 90%;
+	left: 0;
+	right: 0;
+}
+#scrollDown {
+	width: 30px;
+	height: 30px;
+	margin: auto;
+}
+/* grid */
+
 .item01 {
 	grid-area: item01;
 }
@@ -65,9 +105,10 @@ h1 {
 .grid {
 	width: 100%;
 	margin: auto;
+	padding-top: 50px;
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
-	grid-template-rows: repeat(6, 1fr);
+	grid-template-rows: repeat(5, 1fr);
 	grid-template-areas: 
 	"item01 item01 item06 item06 item06 item06"
 	"item03 item03 item03 item02 item02 item02"
@@ -95,38 +136,222 @@ h1 {
 	position: absolute;
 	opacity: 0;	
 }
-.envelope p, .envelope h2
+.envelope p, .envelope h4
 {		
 	font-size: 13px;
+	font-family: 'Helvetica World';
 	font-weight: 400;
-	letter-spacing: .1em;
+	text-align: left;
+	letter-spacing: .13em;
+	line-height: 1.5em;
+	margin: 0;
+	position: relative;
+	left: 30px;
+	top: 425px;
 }
 .envelope p {
-	color: #8FA1B3;
-	width: fit-content;
-	transform-origin: 0% 100%;
-	transform: translate(25px, 70px) rotate(-90deg);
-	position: absolute;
-	z-index: 1;
+	color: #A5ACB3;
 }
-.envelope h2 {
+.envelope h4 {
 	color: #D0DCE8;
-	position: absolute;
-	bottom: 10px;
-	margin: 0;
-	right: 0;
-	left: 0;
-	margin: auto;
+}
+.white p {
+	color: black;
+}
+.white h4 {
+	color: black;
 }
 .envelope:hover {
 	opacity: 1;
 	transition-duration: .3s;
 }
- .about {
-	height: 100%;
+
+/* about */
+
+.about {
 	min-height: 700px;
-	color: white;
+	padding: 150px 0;
+	margin-top: 180px;
+	background-color: #e6ebef;
+	color: #212529;
 }
+.about h4 {
+	margin-bottom: 60px;
+}
+.about>h1 {
+	text-align: center;
+	font-size: 25px;
+	line-height: 50px;
+	margin: 0;
+	letter-spacing: -.01em;
+	font-weight: 400;
+}
+.postup {
+	width: 800px;
+	margin: 150px auto;
+}
+.faze {
+	height: 100px;
+	display: grid;
+	grid-template-columns: 30px 100px 100px auto;
+	grid-gap: 0px;
+	margin: 75px 0 20px 0;
+}
+.faze>div>h5 {
+	transform-origin: 50% 50%;
+	transform: rotate(-90deg) translateX(-24px);
+}
+/* postup číslo fáze */
+.faze>div:nth-of-type(2) {
+	background-color: #252729;
+	color: #e6ebef;
+	font-size: 40px;
+	text-align: center;
+	padding-top: 18px;
+}
+.faze>div:nth-of-type(3) {	
+	border-top: 2px solid #252729;
+	border-bottom: 2px solid #252729;
+}
+.faze>div:last-child {
+	border: 2px solid #252729;
+}
+.faze div>p {	
+	font-size: 30px;
+	text-align: left;
+	letter-spacing: -.01em;
+	margin-left: 30px;
+	padding-top: 4px;
+}
+.postup>ul>li {	
+	min-height: 36px;
+	box-sizing: border-box;
+	font-family: 'Helvetica World';
+	font-size: 16px;
+	line-height: 25px;
+	letter-spacing: .05em;
+	list-style: none;
+}
+.plus {
+	width: 16px;
+	height: 16px;
+	float: right;
+	margin: 10px 30px;
+}
+.postup>ul {
+	padding: 0 0 0 28px;
+	margin-top: 70px;
+}
+.postup>ul>li>div:first-child {
+	position: relative;
+	right: 30px;
+	width: 36px;
+	height: 36px;
+	border: 2px solid #252729;
+	float: left;
+	text-align: center;
+	font-size: 21px;
+	padding-top: 2px;
+	margin-left: 65px;
+	box-sizing: border-box;
+}
+.postup ul p {
+	display: inline-block;
+	padding-top: 10px;	
+	padding-left: 5px;
+	text-align: left;
+	margin: 0;
+}
+.postup .line {
+	width: 2px;
+	min-height: 20px;
+	background-color: #252729;
+	margin-left: 52px;
+}
+.postup ul ul {
+	clear: both;
+	color: #7a8b99;
+	margin-left: 52px;
+	padding-top: 15px;
+	padding-left: 55px;
+	list-style: none;	
+	border-left: 2px solid #252729;
+}
+.postup ul li:last-child ul {
+	border-left: 0px;
+}
+.postup ul ul li {
+	background-image: url('data:image/svg+xml;utf-8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="15px" height="6px" viewBox="0 0 15 6" style="enable-background:new 0 0 15 6;" xml:space="preserve"><style type="text/css">	.st0{fill:%237A8999;}</style><defs></defs><g>	<path class="st0" d="M13,2v2H2V2H13 M15,0H0v6h15V0L15,0z"/></g></svg>');
+	background-repeat: no-repeat;
+	background-position: 0px center;
+	padding-left: 40px;
+}
+.pencil {
+	background-image: url('data:image/svg+xml;utf-8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="38px" height="64px" viewBox="0 0 229 380" style="enable-background:new 0 0 229 380;" xml:space="preserve"><style type="text/css">.st0{fill:%23231F20;}</style><defs></defs><path class="st0" d="M178.6,0h-2.3h-38.6H91.3H52.8h-2.3L0,40v198l83.5,142h31l-36.2-61.6h72.5L114.5,380h31L229,238V40L178.6,0z	 M139.7,23.6v164.6H89.3V23.6H139.7z M201.3,232.4L165.1,294H63.9l-36.2-61.6V50.5l33.9-26.9h0.1v164.6v17.1l-34,27h38.8l25.8-20.5	l0,0h44.6l0,0l25.8,20.5H201.3l-34-27v-17.1V23.6h0.1l33.9,26.9V232.4z"/></svg>');
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.trychtyr {
+	background-image: url('data:image/svg+xml;utf-8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="44px" height="59px" viewBox="0 0 276.5 380" style="enable-background:new 0 0 276.5 380;" xml:space="preserve"><style type="text/css">.st0{fill:%23231F20;}</style><defs></defs><path class="st0" d="M276.5,23.6l-91.4,155.5V380h-26.4V171.3l86.8-147.7H276.5z M245.4,0H31v23.6h214.4V0z M117.8,171.3L31,23.6H0	l91.4,155.5v139.3l36.2,61.6h31l-40.8-69.4V171.3z"/></svg>');
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.vyroba {
+	background-image: url('data:image/svg+xml;utf-8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="36px" height="64px" viewBox="0 0 215.3 380" style="enable-background:new 0 0 215.3 380;"	 xml:space="preserve"><style type="text/css">	.st0{fill:%23231F20;}</style><defs></defs><path class="st0" d="M214.8,380H0.4v-23.6h214.4V380z M119.5,214.4V0H95.8v214.4H119.5z M136.3,234.5l78.9-134.2h-28.7l-78.9,134.2	H136.3z M107.6,234.5L28.7,100.3H0l78.9,134.2H107.6z"/></svg>');
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.graf {
+	background-image: url('data:image/svg+xml;utf-8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="39px" height="45px" viewBox="0 0 299.3 346.7" style="enable-background:new 0 0 299.3 346.7;"	 xml:space="preserve"><style type="text/css">	.st0{fill:%23231F20;}</style><defs></defs><g>	<polygon class="st0" points="74.1,169.7 225.3,169.7 259.7,247 299.3,247 189.3,0 149.7,0 209.7,134.7 89.7,134.7 149.7,0 110,0 		0,247 39.7,247 	"/>	<rect x="7.7" y="311.7" class="st0" width="284" height="35"/></g></svg>');
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.foto {
+	width: 1400px;
+	height: 465px;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 2px;
+	margin-bottom: 180px;
+}
+.foto p {
+	text-align: left;
+	margin: 20px 0px 20px 5px;
+}
+.in {
+	display: block;
+	float: left;
+	margin: 3px 0px 0 5px;
+	width: 22px;
+	height: 21px;
+	background-image: url('data:image/svg+xml;utf-8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="22px" height="21px" viewBox="0 0 22 21" style="enable-background:new 0 0 22 21;" xml:space="preserve"><style type="text/css">	.st0{fill:%237a8b99;}</style><defs></defs><g>	<path id="LinkedIn_1_" class="st0" d="M22,12.9V21h-4.7v-7.6c0-1.9-0.7-3.2-2.4-3.2c-1.3,0-2.1,0.9-2.4,1.7		c-0.1,0.3-0.2,0.7-0.2,1.1V21H7.6c0,0,0.1-12.9,0-14.2h4.7v2c0,0,0,0,0,0h0v0c0.6-1,1.7-2.3,4.3-2.3C19.7,6.5,22,8.5,22,12.9z		 M2.7,0C1.1,0,0,1.1,0,2.5c0,1.4,1,2.5,2.6,2.5h0c1.6,0,2.7-1.1,2.7-2.5C5.3,1.1,4.3,0,2.7,0z M0.3,21H5V6.8H0.3V21z"/></g></svg>');
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.inst {
+	display: block;
+	float: left;
+	margin-left: 15px;
+	width: 29px;
+	height: 29px;
+	background-image: url('data:image/svg+xml;utf-8,<svg version="1.1"	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="29px" height="29px" viewBox="0 0 29 29" style="enable-background:new 0 0 29 29;" xml:space="preserve"><style type="text/css">	.st0{fill:%237a8b99;}</style><defs></defs><g>	<path class="st0" d="M14.5,2.6c3.9,0,4.3,0,5.9,0.1c1.4,0.1,2.2,0.3,2.7,0.5c0.7,0.3,1.2,0.6,1.7,1.1c0.5,0.5,0.8,1,1.1,1.7c0.2,0.5,0.4,1.3,0.5,2.7c0.1,1.5,0.1,2,0.1,5.9s0,4.3-0.1,5.9c-0.1,1.4-0.3,2.2-0.5,2.7c-0.3,0.7-0.6,1.2-1.1,1.7c-0.5,0.5-1,0.8-1.7,1.1c-0.5,0.2-1.3,0.4-2.7,0.5c-1.5,0.1-2,0.1-5.9,0.1s-4.3,0-5.9-0.1c-1.4-0.1-2.2-0.3-2.7-0.5c-0.7-0.3-1.2-0.6-1.7-1.1c-0.5-0.5-0.8-1-1.1-1.7c-0.2-0.5-0.4-1.3-0.5-2.7c-0.1-1.5-0.1-2-0.1-5.9s0-4.3,0.1-5.9C2.8,7.2,3,6.5,3.2,5.9c0.3-0.7,0.6-1.2,1.1-1.7c0.5-0.5,1-0.8,1.7-1.1C6.5,3,7.2,2.8,8.6,2.7C10.2,2.6,10.6,2.6,14.5,2.6 M14.5,0c-3.9,0-4.4,0-6,0.1C7,0.2,5.9,0.4,5,0.8C4,1.1,3.2,1.6,2.4,2.4C1.6,3.2,1.1,4,0.8,5C0.4,5.9,0.2,7,0.1,8.5c-0.1,1.5-0.1,2-0.1,6c0,3.9,0,4.4,0.1,6C0.2,22,0.4,23.1,0.8,24c0.4,1,0.9,1.8,1.7,2.6C3.2,27.4,4,27.9,5,28.2c0.9,0.4,2,0.6,3.5,0.7c1.5,0.1,2,0.1,6,0.1s4.4,0,6-0.1c1.5-0.1,2.6-0.3,3.5-0.7c1-0.4,1.8-0.9,2.6-1.7c0.8-0.8,1.3-1.6,1.7-2.6c0.4-0.9,0.6-2,0.7-3.5c0.1-1.5,0.1-2,0.1-6s0-4.4-0.1-6C28.8,7,28.6,5.9,28.2,5c-0.4-1-0.9-1.8-1.7-2.6C25.8,1.6,25,1.1,24,0.8c-0.9-0.4-2-0.6-3.5-0.7C18.9,0,18.4,0,14.5,0L14.5,0z"/><path class="st0" d="M14.5,7.1c-4.1,0-7.4,3.3-7.4,7.4s3.3,7.4,7.4,7.4s7.4-3.3,7.4-7.4S18.6,7.1,14.5,7.1z M14.5,19.3c-2.7,0-4.8-2.2-4.8-4.8c0-2.7,2.2-4.8,4.8-4.8c2.7,0,4.8,2.2,4.8,4.8C19.3,17.2,17.2,19.3,14.5,19.3z"/><circle class="st0" cx="22.2" cy="6.8" r="1.7"/></g></svg>');
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.kontakt {
+	position: sticky;
+	text-align: right;
+	top: 100px;
+	right: 17%;
+	float: right;
+	z-index: 2;
+}
+
+
+/* responsive */
+
+
 @media only screen and (max-width: 1600px) {
 .grid>div {
 	height: 500px;

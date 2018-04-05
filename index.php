@@ -40,36 +40,25 @@
 			}
 		?>
 		<title>VANTA LAB<?php if (!empty($pagetitle)) {echo '&emsp;|&emsp;'.$pagetitle;}?></title>
+		<!--
 		<script>document.write('<script src="http://' + (location.host || '127.0.0.1').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+		-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="./js/menu-mobil.js"></script>
-		<?php
-		switch ($getpagename) {
-			case 'default':
-				echo ('<script src="./js/loading.js"></script>
-					<script src="./js/color.js"></script>');
-				break;
-
-			case 'project':
-				echo ('<script src="../js/scroller.js"></script>');
-				break;
-		}
-		?>
-		
+		<script src="./js/lottie.js"></script>
+		<script src="./js/scrollDown.js"></script>
+		<script src="./js/slideDown.js"></script>
+		<script src="./js/loading.js"></script>
+		<script src="./js/color.js"></script>		
 	</head>
 	<body>
-	<?php
-		if ($getpagename == "default") 
-		{
-			echo ('<div id="loading"></div>');
-		}
-	?>
+	<div id="loading"></div>
 	<div class="menu">
 		<a class="logo" href="/">
-			VANTA LAB
+				VANTA LAB
 		</a>
 		<div class="nav">	
-			<a href="#about">
+			<a href="#kontakt">
 				<?php echo $lang['spoluprace']; ?>
 			</a>
 			
@@ -85,13 +74,29 @@
 				&#9776;
 			</a>
 		</div>				
-	</div>		
-		<?php
+	</div>	
+		<?php 
 			$router->GetFile($lang);
 		?>
-	<div class="foot">
-		<a href="#"><img src="../../img/ikony/fb.png" alt="facebook" /></a>
-		<a href="#"><img src="../../img/ikony/insta.png" alt="instagram" /></a>
+	<div id="kontakt" class="foot">
+		<div>
+			<a class="fb" href="javascript:void(0);"></a>
+			<a class="inst" href="javascript:void(0);"></a>
+		</div>
+		<ul>
+			<li>
+				<h4>e-mail</h4>
+				<p>info@vantalab.cz</p>
+			</li>
+			<li>
+				<h4>telefon</h4>
+				<p>724 468 834</p>
+			</li>
+			<li>
+				<h4>adresa</h4>
+				<p>Brno, Botanická 59</p>
+			</li>
+		</ul>
 	</div>
 	</body>
 </html>
