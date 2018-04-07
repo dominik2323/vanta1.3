@@ -50,6 +50,7 @@
 		<script src="./js/slideDown.js"></script>
 		<script src="./js/loading.js"></script>
 		<script src="./js/color.js"></script>		
+		<script src="//cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script>
 	</head>
 	<body>
 	<div id="loading"></div>
@@ -79,24 +80,28 @@
 			$router->GetFile($lang);
 		?>
 	<div id="kontakt" class="foot">
-		<div>
-			<a class="fb" href="javascript:void(0);"></a>
-			<a class="inst" href="javascript:void(0);"></a>
+		<div class="footGrid">
+			<div>
+				<a class="fb" href="javascript:void(0);"></a>
+				<a class="inst" href="javascript:void(0);"></a>
+			</div>
+			<div>
+				<ul>
+					<li>
+						<h4>e-mail</h4>
+						<p>info@vantalab.cz</p>
+					</li>
+					<li>
+						<h4><?php echo $lang['telefon']; ?></h4>
+						<p><?php echo $lang['cislo']; ?></p>
+					</li>
+					<li>
+						<h4><?php echo $lang['adresa']; ?></h4>
+						<p><?php echo $lang['atelier']; ?></p>
+					</li>
+				</ul>
+			</div>
 		</div>
-		<ul>
-			<li>
-				<h4>e-mail</h4>
-				<p>info@vantalab.cz</p>
-			</li>
-			<li>
-				<h4><?php echo $lang['telefon']; ?></h4>
-				<p><?php echo $lang['cislo']; ?></p>
-			</li>
-			<li>
-				<h4><?php echo $lang['adresa']; ?></h4>
-				<p><?php echo $lang['atelier']; ?></p>
-			</li>
-		</ul>
 	</div>
 	</body>
 </html>

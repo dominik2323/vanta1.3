@@ -11,14 +11,20 @@ $(document).ready(function()
 			autoplay: false,
 			path: "../json/plus.json"
 		});	
-
+		animation.setSpeed(3);
 		$(slideDown).hover(function() {
 			var status = $(plus).next('ul').attr('style');
 			hoverToggle(1, [0,15], status);
+			$(slideDown).animate({
+				color: '#7a8b99',
+			}, 150);
 		}, function()
 		{
 			var status = $(plus).next('ul').attr('style');
 			hoverToggle(-1, [15,0], status);
+			$(slideDown).animate({
+				color: '#212529',
+			}, 150);
 		});
 
 		$(slideDown).click(function() {			
@@ -31,7 +37,6 @@ $(document).ready(function()
 		{
 			if (status == 'display: none;') 
 			{
-				animation.setSpeed(3);
 				animation.setDirection(direction);
 				animation.playSegments(frames, true);
 			} else {
@@ -43,11 +48,9 @@ $(document).ready(function()
 		{
 			if (status == 'display: none;') 
 			{
-				animation.setSpeed(2);
 				animation.setDirection(1);
 				animation.playSegments([15,49], true);
 			} else {
-				animation.setSpeed(2);
 				animation.setDirection(-1);
 				animation.playSegments([49,15], true);
 			}
