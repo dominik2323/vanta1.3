@@ -2,56 +2,44 @@ body {
 	background-color: #252729;
 	color: #dae6f1;
 }
-.content {
-	width: 1400px;
-	margin: auto;
-}
 
 /* intro slide */
-	
+
 .intro {
+	width: 1400px;
 	height: 100vh;
-	min-height: 1000px;
-	width: auto;
+	position: relative;
+	margin: auto;
+}
+.introGrid {	
+	position: absolute;
+	left: 0;right: 0;top: 0;bottom: 0;
 	display: grid;
 	grid-template-columns: auto auto;
 	grid-gap: 50px;
 	margin: auto;
-	padding-top: 15%;
-	box-sizing: border-box;
 }
-.intro h1 {
+.introGrid div {
+	height: 500px;
+	position: relative;
+	bottom: 5%;
+	align-self: center;
+}
+.introGrid h1 {
 	font-size: 140px;
 	line-height: 140px;
 	text-align: left;
-	float: right;
 	letter-spacing: -.01em;
-	margin: 100px 0 0 0;
 }
-.intro h2 {
+.introGrid h2 {
 	font-size: 30px;
 	font-weight: 400;
 	text-align: right;
-	float: left;
 	letter-spacing: -.01em;
 	line-height: 36px;
-}/*
-.intro ul {
-	font-size: 18px;
-	line-height: 25px;
-	font-weight: 400;
-	text-align: left;
-	letter-spacing: -.01em;
-	padding: 0;
-	margin-top: 50px;
-	list-style: none;
+	/*position: absolute;
+	right: 0;*/
 }
-.intro li {
-	background-image: url('data:image/svg+xml;utf-8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"   x="0px" y="0px" width="9px" height="15px" viewBox="0 0 9 15" style="enable-background:new 0 0 9 15;" xml:space="preserve"><style type="text/css">.st0{fill:%23828E99;}</style><defs></defs><g id="Layer_2_2_">   <g id="Layer_1-2_1_">      <polygon class="st0" points="9,7.5 9,5.5 0,0 0,2      "/>      <polygon class="st0" points="9,7.5 9,9.5 0,15 0,13       "/>   </g></g></svg>');
-	background-repeat: no-repeat;
-	background-position: left center;
-	padding-left: 40px;
-}*/
 .intro>a {
 	width: 34px;
 	height: 14px;
@@ -103,7 +91,7 @@ body {
 	grid-area: item11;
 }
 .grid {
-	width: 100%;
+	width: 1400px;
 	margin: auto;
 	padding-top: 50px;
 	display: grid;
@@ -139,7 +127,7 @@ body {
 .envelope p, .envelope h4
 {		
 	font-size: 13px;
-	font-family: 'Helvetica World';
+	font-family: 'Helvetica World Italic';
 	font-weight: 400;
 	text-align: left;
 	letter-spacing: .13em;
@@ -226,7 +214,7 @@ body {
 .postup>ul>li {	
 	min-height: 36px;
 	box-sizing: border-box;
-	font-family: 'Helvetica World';
+	font-family: 'Helvetica World Regular';
 	font-size: 16px;
 	line-height: 25px;
 	letter-spacing: .05em;
@@ -308,12 +296,15 @@ body {
 }
 .foto {
 	width: 1400px;
-	height: 465px;
+	height: 500px;
 	margin: auto;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	grid-gap: 2px;
 	margin-bottom: 180px;
+}
+img {
+	width: 100%;
+	object-fit: cover;
 }
 .foto p {
 	text-align: left;

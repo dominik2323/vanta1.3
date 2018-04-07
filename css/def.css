@@ -1,8 +1,19 @@
+@font-face {
+    font-family: Helvetica World Bold Italic;
+    src: url("../fonts/HelveticaWorld-BoldItalic.ttf");
+}
+@font-face {
+    font-family: Helvetica World Regular;
+    src: url("../fonts/HelveticaWorld-Regular.ttf");
+}
+@font-face {
+    font-family: Helvetica World Italic;
+    src: url("../fonts/HelveticaWorld-Italic.ttf");
+}
 body {
 	margin: 0px;
 	font-family: 'Space Mono', monospace, sans-serif;
 	/*font-variant-numeric: oldstyle-nums;*/
-
 }
 a {
 	text-decoration: none;
@@ -30,22 +41,19 @@ a {
 	margin-top: 1px;
 }
 .menu {
-	width: 100%;
-	/*height: 40px;*/
 	background-color: #252729;
 	box-sizing: border-box;
 	padding: 10px 17%;
 	position: fixed;
 	top: 0px;
+	left: 0px;
+	right: 0px;
 	z-index: 1;
 }
 .nav {
 	float: right;
 	margin-top: 6px;
-}/*
-.dark {
-	color: #000000;
-}*/
+}
 .nav>a {
 	color: #dae6f1;
 }
@@ -86,21 +94,20 @@ h3 {
 	line-height: 2em;
 }
 h4 {
-	font-family: 'Helvetica World';
+	font-family: 'Helvetica World Bold Italic';
 	font-size: 14px;
 	text-align: center;
-	font-style: italic;
 	text-transform: uppercase;
 	color: #7a8b99;
-	font-weight: 600;
-	letter-spacing: .05em;
+	font-weight: 400;
+	letter-spacing: .1em;
 }
 h5 {
-	font-family: 'Helvetica World';
+	font-family: 'Helvetica World Regular';
 	text-transform: uppercase;
 	font-size: 12px;
 	font-style: normal;
-	letter-spacing: .15em;
+	letter-spacing: .2em;
 }
 p {
 	text-align: center;
@@ -113,16 +120,16 @@ p {
 /* pata */
 
 .foot {
-	width: 100%;
+	width: 1400px;
 	height: 100%;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	min-height: 800px;
-	padding: 150px 200px;
 	box-sizing: border-box;
+	margin: auto;
 }
 .foot ul {
 	float: left;
+	margin: auto;
 }
 .foot li {
 	list-style: none;
@@ -138,6 +145,7 @@ p {
 	letter-spacing: -.01em;
 	line-height: 1.3em;
 	margin: 0;
+	margin-top: 15px;
 }
 .foot div {
 	margin: auto;
